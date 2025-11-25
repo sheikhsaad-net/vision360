@@ -41,7 +41,7 @@ All participants are expected to follow the [Vision360 Code of Conduct](#) to en
 
 ## Security Vulnerabilities
 
-Report any security issues to the project maintainers via [security@vision360.com](mailto:security@vision360.com). All issues are addressed promptly.
+Report any security issues to the project maintainers via [sheikh@immenaive.it](mailto:sheikh@immenaive.it). All issues are addressed promptly.
 
 ## License
 
