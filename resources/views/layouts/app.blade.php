@@ -35,7 +35,7 @@
     @livewireStyles
   </head>
   
-<body class="g-sidenav-show bg-gray-100">
+    <body class="g-sidenav-show bg-gray-100">
         <x-banner />
 
         <div class="min-h-screen bg-gray-100">
@@ -61,19 +61,19 @@
 
         @livewireScripts
   
-  <!--   Core JS Files   -->
-  <script src="{{ url('/assets/js/core/popper.min.js') }}"></script>
-  <script src="{{ url('/assets/js/core/bootstrap.min.js') }}"></script>
-  <script src="{{ url('/assets/js/plugins/perfect-scrollbar.min.js') }}"></script>
-  <script src="{{ url('/assets/js/plugins/smooth-scrollbar.min.js') }}"></script>
-  <script src="{{ url('/assets/js/plugins/chartjs.min.js') }}"></script>
-  <script src="{{ url('/assets/js/plugins/swiper-bundle.min.js') }}" type="text/javascript"></script>
- 
-  <!-- Github buttons -->
-  <script async defer src="https://buttons.github.io/buttons.js"></script>
-  <!-- Control Center for Corporate UI Dashboard: parallax effects, scripts for the example pages etc -->
-  <script src="{{ url('/assets/js/corporate-ui-dashboard.min.js?v=1.0.0') }}"></script>
-</body>
+        <!--   Core JS Files   -->
+        <script src="{{ url('/assets/js/core/popper.min.js') }}"></script>
+        <script src="{{ url('/assets/js/core/bootstrap.min.js') }}"></script>
+        <script src="{{ url('/assets/js/plugins/perfect-scrollbar.min.js') }}"></script>
+        <script src="{{ url('/assets/js/plugins/smooth-scrollbar.min.js') }}"></script>
+        <script src="{{ url('/assets/js/plugins/chartjs.min.js') }}"></script>
+        <script src="{{ url('/assets/js/plugins/swiper-bundle.min.js') }}" type="text/javascript"></script>
+        
+        <!-- Github buttons -->
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
+        <!-- Control Center for Corporate UI Dashboard: parallax effects, scripts for the example pages etc -->
+        <script src="{{ url('/assets/js/corporate-ui-dashboard.min.js?v=1.0.0') }}"></script>
+    </body>
 
 </html>
 
