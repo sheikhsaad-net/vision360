@@ -31,14 +31,6 @@ Video walkthroughs, use-case guides, and technical manuals help new users get st
 
 Community-driven resources and internal training programs provide hands-on examples.
 
-## Sponsors & Partners
-
-We thank the following partners for supporting Vision360 development:
-
-- **[NOVIDO](https://novido.it)**
-- **[Corporate Partners](#)**
-- **[Tech Collaborators](#)**
-
 ## Contributing
 
 If you wish to contribute to Vision360, please follow our [contribution guide](#) to submit code, report bugs, or suggest features.
