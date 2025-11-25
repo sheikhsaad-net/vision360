@@ -49,7 +49,7 @@
         <x-section-border />
 
         <!-- Manage API Tokens -->
-        <div class="mt-10 sm:mt-0">
+        <div class="mt-5 sm:mt-0">
             <x-action-section>
                 <x-slot name="title">
                     {{ __('Manage API Tokens') }}
