@@ -9,23 +9,30 @@ class Video extends Component
 {
     public $videos;
     public $selectedVideoUrl = null;
-    public $videoModal = false; // property to show/hide modal
+    public $selectedLocation = null;
+    public $videoModal = false;
 
     public function mount()
     {
         $this->videos = VideoModel::all();
     }
 
-    public function openVideo($videoUrl)
+    // Accept ID instead of URL
+    public function openVideo($videoId)
     {
-        $this->selectedVideoUrl = $videoUrl;
-        $this->videoModal = true; // show modal
+        $video = VideoModel::find($videoId);
+        if ($video) {
+            $this->selectedVideoUrl = $video->file_path;
+            $this->selectedLocation = $video->location;
+            $this->videoModal = true;
+        }
     }
 
     public function closeVideo()
     {
         $this->selectedVideoUrl = null;
-        $this->videoModal = false; // hide modal
+        $this->selectedLocation = null;
+        $this->videoModal = false;
     }
 
     public function render()
