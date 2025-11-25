@@ -1,4 +1,4 @@
-<div class="row g-3">
+<div class="row g-4">
 
     @foreach($videos as $video)
         <div class="col-lg-3 col-md-6">

@@ -2,7 +2,9 @@
     <div class="container-fluid py-2 px-4">
         <nav aria-label="breadcrumb">
             <div class="d-flex align-items-center">
-                <span class="px-3 font-weight-bold text-lg text-white me-4">{{ config('app.name', 'Vision360') }}</span>
+                <a href="{{ route('dashboard') }}" class="px-3 fw-bold fs-5 text-white me-4 text-decoration-none">
+                    {{ config('app.name', 'Vision360') }}
+                </a>
             </div>
         </nav>
 
