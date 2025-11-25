@@ -2,12 +2,12 @@
 
 use Illuminate\Support\Facades\Route;
 
+Route::get('/register', function () {
+    abort(404);
+})->name('register');
+
 Route::get('/', function () {
     return view('auth.login');
-});
-
-Route::get('/welcome', function () {
-    return view('welcome');
 });
 
 Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified',])->group(function () {

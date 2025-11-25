@@ -1,11 +1,5 @@
 @php
     $user = auth()->user();
-    $setting = $user->setting;
-
-    if ($setting && $setting->role !== 'admin') {
-        header('Location: ' . url('/welcome'));
-        exit;
-    }
 @endphp
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
