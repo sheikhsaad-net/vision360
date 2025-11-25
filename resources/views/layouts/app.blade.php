@@ -4,36 +4,43 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="csrf-token" content="{{ csrf_token() }}">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="apple-touch-icon" sizes="76x76" href="{{ url('/assets/img/apple-icon.png') }}">
-  <link rel="icon" type="image/png" href="{{ url('/assets/img/favicon.png') }}">
-  <title>{{ config('app.name', 'Laravel') }}</title>
-  <!--     Fonts and icons     -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Noto+Sans:300,400,500,600,700,800|PT+Mono:300,400,500,600,700" rel="stylesheet" />
-  <!-- Nucleo Icons -->
-  <link href="{{ url('/assets/css/nucleo-icons.css') }}" rel="stylesheet" />
-  <link href="{{ url('/assets/css/nucleo-svg.css') }}" rel="stylesheet" />
-  <!-- Font Awesome Icons -->
-  <script src="https://kit.fontawesome.com/349ee9c857.js" crossorigin="anonymous"></script>
-  <link href="{{ url('/assets/css/nucleo-svg.css') }}" rel="stylesheet" />
-  <!-- CSS Files -->
-  <link id="pagestyle" href="{{ url('/assets/css/corporate-ui-dashboard.css?v=1.0.0') }}" rel="stylesheet" />
+  <head>
+    <meta charset="utf-8" />
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!-- Scripts -->
-  @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ url('/assets/img/apple-icon.png') }}">
+    <link rel="icon" type="image/png" href="{{ url('/assets/img/favicon.png') }}">
 
-  <!-- Styles -->
-  @livewireStyles
-</head>
+    <title>{{ config('app.name', 'Laravel') }}</title>
 
-<body class="g-sidenav-show  bg-gray-100">
+    <!-- Fonts and icons -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Noto+Sans:300,400,500,600,700,800|PT+Mono:300,400,500,600,700" rel="stylesheet" />
+
+    <!-- Nucleo Icons -->
+    <link href="{{ url('/assets/css/nucleo-icons.css') }}" rel="stylesheet" />
+    <link href="{{ url('/assets/css/nucleo-svg.css') }}" rel="stylesheet" />
+
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/349ee9c857.js" crossorigin="anonymous"></script>
+    <link href="{{ url('/assets/css/nucleo-svg.css') }}" rel="stylesheet" />
+
+    <!-- CSS Files -->
+    <link id="pagestyle" href="{{ url('/assets/css/corporate-ui-dashboard.css?v=1.0.0') }}" rel="stylesheet" />
+
+    <!-- Scripts -->
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+
+    <!-- Livewire Styles -->
+    @livewireStyles
+  </head>
+  
+<body class="g-sidenav-show bg-gray-100">
         <x-banner />
 
         <div class="min-h-screen bg-gray-100">
             @livewire('navigation-menu')
+            <div class="pt-5 pb-6 bg-cover" style="background-image: url('../assets/img/header-blue-purple.jpg')"></div>
 
             <!-- Page Heading -->
             @if (isset($header))
@@ -45,8 +52,7 @@
             @endif
 
             <!-- Page Content -->
-            <main>
-                <x-sidebar />
+            <main class="mt-n6">
                 {{ $slot }}
             </main>
         </div>

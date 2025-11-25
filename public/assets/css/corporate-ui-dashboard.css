@@ -5500,7 +5500,6 @@ fieldset:disabled .btn {
 }
 
 .breadcrumb-item+.breadcrumb-item {
-  text-transform: capitalize;
   padding-left: var(--bs-breadcrumb-item-padding-x);
 }
 
