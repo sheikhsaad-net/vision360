@@ -1,0 +1,76 @@
+<x-guest-layout>
+<main class="main-content  mt-0">
+    <section>
+      <div class="page-header min-vh-100">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="position-absolute w-40 top-0 start-0 h-100 d-md-block d-none">
+                <div class="oblique-image position-absolute d-flex fixed-top ms-auto h-100 z-index-0 bg-cover me-n8" style="background-image:url('{{ url('/assets/img/image-sign-up.jpg') }}">
+                  <div class="my-auto text-start max-width-350 ms-7">
+                  <h1 class="mt-3 text-white font-weight-bolder">Recupera la tua password Vision360</h1>
+                    <p class="text-white text-lg mt-4 mb-4">Inserisci la tua email per ricevere il link di reimpostazione della password.</p>
+                    <div class="d-flex align-items-center">
+                      <div class="avatar-group d-flex">
+                        <a class="avatar avatar-sm rounded-circle" data-bs-toggle="tooltip" data-original-title="Jessica Rowland">
+                          <img alt="Image placeholder" src="{{ url('/assets/img/team-3.jpg') }}" class="">
+                        </a>
+                        <a class="avatar avatar-sm rounded-circle" data-bs-toggle="tooltip" data-original-title="Audrey Love">
+                          <img alt="Image placeholder" src="{{ url('/assets/img/team-4.jpg') }}" class="rounded-circle">
+                        </a>
+                        <a class="avatar avatar-sm rounded-circle" data-bs-toggle="tooltip" data-original-title="Michael Lewis">
+                          <img alt="Image placeholder" src="{{ url('/assets/img/marie.jpg') }}" class="rounded-circle">
+                        </a>
+                        <a class="avatar avatar-sm rounded-circle" data-bs-toggle="tooltip" data-original-title="Audrey Love">
+                          <img alt="Image placeholder" src="{{ url('/assets/img/team-1.jpg') }}" class="rounded-circle">
+                        </a>
+                      </div>
+                      <p class="font-weight-bold text-white text-sm mb-0 ms-2">Unisciti a oltre 2.5K+ utenti</p>
+                    </div>
+                  </div>
+                  <div class="text-start position-absolute fixed-bottom ms-7">
+                    <h6 class="text-white text-sm mb-5">Copyright © 2025 Vision360 Design by Immensive.</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5 d-flex flex-column mx-auto">
+                <div class="card card-plain mt-8">
+                <div class="card-header pb-0 text-left bg-transparent">
+                  <h3 class="font-weight-black text-dark display-6 mb-2">Password dimenticata?</h3>
+                    <p class="mb-3">Ti invieremo un link via email per creare una nuova password e accedere al tuo account.</p>
+                </div>
+                <x-authentication-card>
+                
+                <div class="card-body">
+                    <form method="POST" action="{{ route('password.email') }}">
+                        @csrf
+
+                        <div class="block">
+                            <x-label for="email" value="{{ __('Email') }}" />
+                            <x-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus autocomplete="username" />
+                        </div>
+
+                        <div class="flex items-center justify-end mt-4">
+                            <x-button>
+                               {{ __('Invia link di reimpostazione password') }}        
+                            </x-button>
+                        </div>
+                    </form>
+                </div>
+                <div class="card-footer text-center pt-0 px-lg-2 px-1">
+                  <p class="mb-4 text-xs mx-auto">
+                    <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('login') }}">
+                        {{ __('Torna al login') }}
+                    </a>
+                  </p>
+                </div>
+                </x-authentication-card>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</x-guest-layout>
