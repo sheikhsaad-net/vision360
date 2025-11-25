@@ -7,55 +7,50 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
+## About Vision360
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Vision360 is a web-based platform for immersive 360° video and content management.  
+It provides tools for seamless video playback, location-based tagging, and real-time interaction.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Key features include:
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- Fast and responsive dashboard for video management.
+- Fullscreen video player with controlled playback options.
+- User-specific session management and permissions.
+- Lightweight, mobile-friendly UI.
+- Secure, role-based access control.
+- Real-time notifications and event handling.
 
-## Learning Laravel
+Vision360 is designed for simplicity, performance, and scalability.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## Learning Vision360
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+Comprehensive [documentation](#) and tutorials are available for users and developers.  
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Video walkthroughs, use-case guides, and technical manuals help new users get started quickly.  
 
-## Laravel Sponsors
+Community-driven resources and internal training programs provide hands-on examples.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## Sponsors & Partners
 
-### Premium Partners
+We thank the following partners for supporting Vision360 development:
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+- **[NOVIDO](https://novido.it)**
+- **[Corporate Partners](#)**
+- **[Tech Collaborators](#)**
 
 ## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+If you wish to contribute to Vision360, please follow our [contribution guide](#) to submit code, report bugs, or suggest features.
 
 ## Code of Conduct
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+All participants are expected to follow the [Vision360 Code of Conduct](#) to ensure a safe and inclusive environment.
 
 ## Security Vulnerabilities
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Report any security issues to the project maintainers via [security@vision360.com](mailto:security@vision360.com). All issues are addressed promptly.
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Vision360 is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).
